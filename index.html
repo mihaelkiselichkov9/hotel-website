@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CozyStay Hotel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://picsum.photos/1600/900?hotel') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-attachment: fixed;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    header a {
+      background: #ff6b6b;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #e84141;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .rooms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .room {
+      background: #f8f8f8;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .room:hover {
+      transform: translateY(-5px);
+    }
+
+    .room img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .room h3 {
+      margin: 15px;
+    }
+
+    .room p {
+      margin: 0 15px 20px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CozyStay Hotel</h1>
+    <p>Your comfort, our priority.</p>
+    <a href="#contact">Book Now</a>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Welcome to CozyStay Hotel, where modern luxury meets comfort. Our hotel offers stylish rooms, excellent service, and unforgettable experiences for every guest.</p>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Our Rooms & Services</h2>
+    <div class="rooms">
+      <div class="room">
+        <img src="https://picsum.photos/400/250?room1" alt="Deluxe Room">
+        <h3>Deluxe Room</h3>
+        <p>Spacious and elegant, perfect for families or couples.</p>
+      </div>
+      <div class="room">
+        <img src="https://picsum.photos/400/250?room2" alt="Suite">
+        <h3>Luxury Suite</h3>
+        <p>Indulge in luxury with a private balcony and ocean view.</p>
+      </div>
+      <div class="room">
+        <img src="https://picsum.photos/400/250?room3" alt="Standard Room">
+        <h3>Standard Room</h3>
+        <p>Affordable comfort with all essential amenities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Beach Road, Paradise City</p>
+    <p>📞 +1 234 567 890</p>
+    <p>📧 info@cozystayhotel.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 CozyStay Hotel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
